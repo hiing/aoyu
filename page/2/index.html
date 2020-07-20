@@ -1,287 +1,722 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea</title>
-<link rel="shortcut icon" href="https://hiing.github.io/favicon.ico?v=1595222417148">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="utf-8" >
+
+<title>凹鱼的博客</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://hiing.github.io/favicon.ico?v=1595222495997">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://hiing.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://hiing.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-    <meta name="description" content="温故而知新" />
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://hiing.github.io">
-  <img class="avatar" src="https://hiing.github.io/images/avatar.png?v=1595222417148" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://hiing.github.io">凹鱼的博客</a></h3>
   </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/wo-qu-guo-miao-zhai/">
-        <h2 class="post-title">我去过苗寨</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2012-03-13
-        </span>
-        <span>
-          4 min read
-        </span>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-      </div>
-      
-      <div class="post-abstract">
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
         
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/ni-hao-da-wei/">
-        <h2 class="post-title">你好，大卫</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2012-03-07
-        </span>
-        <span>
-          2 min read
-        </span>
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
         
-      </div>
-      
-      <div class="post-abstract">
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
         
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/kan-ya-ji-jiu-wen/">
-        <h2 class="post-title">看牙记（旧文）</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2012-03-06
-        </span>
-        <span>
-          5 min read
-        </span>
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
         
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/yin-wei-ri-ben-ren-sha-liao-ren-suo-yi-li-feng-yi-bi-xu-si/">
-        <h2 class="post-title">因为日本人杀了人，所以李凤仪必须死</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2012-03-04
-        </span>
-        <span>
-          3 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/shi-guang-li-de-yan/">
-        <h2 class="post-title">时光里的盐</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2012-03-01
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/guan-yu-yi-shi/">
-        <h2 class="post-title">关于译事</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2010-12-01
-        </span>
-        <span>
-          3 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/bei-wei-kun-de-cheng-yi/">
-        <h2 class="post-title">被围困的城邑</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2010-11-14
-        </span>
-        <span>
-          4 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/ju-zi/">
-        <h2 class="post-title">橘子</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2010-11-04
-        </span>
-        <span>
-          7 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/cong-mu-he-lan-da-dao-dao-dao-meng-kong-jian/">
-        <h2 class="post-title">从穆赫兰大道到盗梦空间</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2010-09-18
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://hiing.github.io/post/ting-feng-wu-guo-qi/">
-        <h2 class="post-title">霆锋唔过气</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2010-08-26
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-    <a href="https://hiing.github.io/" class="prev-page">上一页</a>
-  
-  
-    <a href="https://hiing.github.io/page/3/" class="next-page">下一页</a>
-  
-</div>
-
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://hiing.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
+      </ul>
     </div>
+  </div>
+</nav>
+
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/wo-qu-guo-miao-zhai/">我去过苗寨</a>
+    </h2>
+    <p class="article-meta">
+      2012-03-13
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/wo-qu-guo-miao-zhai/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/ni-hao-da-wei/">你好，大卫</a>
+    </h2>
+    <p class="article-meta">
+      2012-03-07
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/ni-hao-da-wei/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/kan-ya-ji-jiu-wen/">看牙记（旧文）</a>
+    </h2>
+    <p class="article-meta">
+      2012-03-06
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/kan-ya-ji-jiu-wen/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/yin-wei-ri-ben-ren-sha-liao-ren-suo-yi-li-feng-yi-bi-xu-si/">因为日本人杀了人，所以李凤仪必须死</a>
+    </h2>
+    <p class="article-meta">
+      2012-03-04
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/yin-wei-ri-ben-ren-sha-liao-ren-suo-yi-li-feng-yi-bi-xu-si/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/shi-guang-li-de-yan/">时光里的盐</a>
+    </h2>
+    <p class="article-meta">
+      2012-03-01
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/shi-guang-li-de-yan/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/guan-yu-yi-shi/">关于译事</a>
+    </h2>
+    <p class="article-meta">
+      2010-12-01
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/guan-yu-yi-shi/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/bei-wei-kun-de-cheng-yi/">被围困的城邑</a>
+    </h2>
+    <p class="article-meta">
+      2010-11-14
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/bei-wei-kun-de-cheng-yi/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/ju-zi/">橘子</a>
+    </h2>
+    <p class="article-meta">
+      2010-11-04
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/ju-zi/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/cong-mu-he-lan-da-dao-dao-dao-meng-kong-jian/">从穆赫兰大道到盗梦空间</a>
+    </h2>
+    <p class="article-meta">
+      2010-09-18
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/cong-mu-he-lan-da-dao-dao-dao-meng-kong-jian/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://hiing.github.io/post/ting-feng-wu-guo-qi/">霆锋唔过气</a>
+    </h2>
+    <p class="article-meta">
+      2010-08-26
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://hiing.github.io/post/ting-feng-wu-guo-qi/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+
+        </div>
+        
+        <div class="row flex-edges">
+  
+    <a href="https://hiing.github.io/" class="paper-btn">
+      上一页
+    </a>
+  
+  
+    <a href="https://hiing.github.io/page/3/" class="paper-btn">
+      下一页
+    </a>
+  
+</div>
+
+      </div>
+      
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://hiing.github.io/images/avatar.png?v=1595222495997" class="no-responsive avatar">
+    <div class="text-muted">温故而知新</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/qi-xi-jie-zhi-wo-qing-shen-yi-chong-de-nu-you-li-qing/">七夕节致我情深意重的女友李青</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/ji-ceng-she-ji/">基层设计</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/jia-xiao-jiao-lian-jiu-shi-ren-zha/">驾校教练就是人渣</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/ming-ri-zhi-xing-de-tong-gao/">明日之星的通告</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/ma-ma-wo-ba-yao-chi-diu-liao/">妈妈，我把钥匙丢了</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/tu-bo-shu/">土 拨 鼠</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/shuo-shuo-zui-jin-xiang-gang-pian/">说说最近香港片</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/su-she-lou-lai-liao-zhi-xiao-gou/">宿舍楼来了只小狗</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/tui-jian-si-bu-han-guo-dian-ying/">推荐四部韩国电影</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://hiing.github.io/post/ji-nian-hai-zi/">纪念海子</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hiing.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
   </body>
 </html>

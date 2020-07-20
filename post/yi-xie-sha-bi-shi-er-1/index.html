@@ -1,313 +1,150 @@
 
+<!DOCTYPE html>
 <html>
-  <head lang="zh">
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-        <meta content="yes" name="apple-mobile-web-app-capable"/>
-        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-        <meta content="telephone=no" name="format-detection"/>
-        <meta name="renderer" content="webkit">
-    <title>一些傻逼事儿（1） | 凹鱼的博客</title>
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/jquery.js"></script>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/basic.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>一些傻逼事儿（1） | 凹鱼的博客</title>
+<meta name="description" content="null">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://etmmdf.coding-pages.com/favicon.ico?v=1595231818296">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://etmmdf.coding-pages.com/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
 
   </head>
-
   <body>
-     <div class="header">
-      <div class="logo_title">
-		  
-        <div class="title animated fadeInDown"><img src="https://etmmdf.coding-pages.com/images/avatar.png?v=1595231708423"/>
-
-          <h1 title="凹鱼的博客" class="weaklink"><a href="/">凹鱼的博客</a>
-
-          </h1>
-
-          <div class="navbar weaklink">
-            <div class="normal_nav">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-		
-      <ul class="mixed_site_nav site_nav sm sm-base">
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
- 
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://etmmdf.coding-pages.com">
+        <img class="avatar" src="https://etmmdf.coding-pages.com/images/avatar.png?v=1595231818296" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://etmmdf.coding-pages.com">
+        <h1 class="site-title">凹鱼的博客</h1>
+      </a>
     </div>
-
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
 </div>
 
-            </div>
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
 
-            <div class="hamberger"><i class="fa fa-bars"></i>
-<i class="fa fa-times"></i>
 
-            </div>
-
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">一些傻逼事儿（1）</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2009-06-03</span>
+            
           </div>
-
-        </div>
-
-      </div>
-
-      <div class="hidden_nav animated fadeInDown">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-      <ul class="mixed_site_nav site_nav sm sm-base">
-		  
-	
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
-
-
-
-
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
-</div>
-
-      </div>
-
-    </div>
-
-
-    <div class="main">
-      <div class="main-inner">
-
-
-<div class="content">
-
-
-
-
-
-
-  <div class="post_page" >
-
-<div class="post">
-  <div class="post_title sm_margin">
-    <h2><a>一些傻逼事儿（1）</a>
-
-
-
-    </h2>
-  </div>
-
-  <div class="post_details">
-    <div class="info"><i class="fa fa-clock-o"></i>
-<span class="date_info">2009-06-03</span>
-<i class="fa fa-eye"></i>
-
-<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
-
-
-<i class="fa fa-bookmark-o"></i>
-<span class="tags_info weaklink">
-	
-
-</span>
-
-
-    </div>
-
-  </div>
-
-
-
-
-
-  <div class="post_content markdown"><p class="md_block">
-    <span class="md_line md_line_start md_line_end"><p>前天皮肤过敏刚好时，就想把被子晒一晒，但老天情绪不定，喜怒无常，又偏偏碰上我这记性差的主，愣是让被子在栏杆上淋了一宿，所幸雨并不大，收起被子的时候就像刚从冰箱里出来一样，盖在身上到有点“今夜个翠被生寒有梦知”的意思。</p>
+          <div class="post-content">
+            <p>前天皮肤过敏刚好时，就想把被子晒一晒，但老天情绪不定，喜怒无常，又偏偏碰上我这记性差的主，愣是让被子在栏杆上淋了一宿，所幸雨并不大，收起被子的时候就像刚从冰箱里出来一样，盖在身上到有点“今夜个翠被生寒有梦知”的意思。</p>
 <p>但这可不是第一次了，大概也不是最后一次。</p>
 <p>两年前，一样是晒被子，不过是晒的另一条，所以晒了之后仍有被子盖，就因为仍有被子盖，我就把晒被子这茬忘到爪洼国去了，有意思的是，之后又连续下了一礼拜的雨，那雨下的才叫雨呢，淅淅沥沥，下的有点荡气回肠的感觉，而我平均每天路过那个晒着我的被子的栏杆十次，终于有一天忍不住对着那条被子说：那个傻逼晒了被子不知道收！--真的，我就是这么说得。</p>
 <p>又过了一周，我终于发现那个“傻逼”就是我自己，最后我去收被子的时候仍然感到异常腼腆，因为在这一周时间里，我已和无数人无数次嘲笑了那个晒被子的人。</p>
 <p>与这个事件差不多的是我一个朋友的故事：</p>
 <p>某次考试，考生的书包都要放在讲台上，手机当然是放在书包里，考试中，手机铃响，我的朋友率先发难，喝道：那个不知轻重的娃儿开着手机！那手机铃声又响了n久，由于书包成堆，监考官不好翻包，故只能任它响，期间我的朋友又咒骂多次，他居然还没能听出那是他的手机铃声！</p>
 <p>虽然事件差不多，但不同的是，事后我把我的傻逼事儿当做笑料来讲，博得广大同学言笑晏晏，至少证明这件事儿还是有点价值的 ，而我的朋友这件事的流传范围不超过四个人，这还是我和他讲述我这件事儿后，他实在忍不住表达的欲望，或意借此证明谁更傻逼才跟我讲的。</p>
-</p>
 
-     <p class="md_block">
-    <div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" src="https://etmmdf.coding-pages.com/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img class="wechat-img" src="https://etmmdf.coding-pages.com/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
-</p> 
-</div>
+          </div>
+        </div>
 
-</div>
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://etmmdf.coding-pages.com/post/da-bian-wan-bi/">
+              <h3 class="post-title">
+                下一篇：答辩完毕
+              </h3>
+            </a>
+          </div>
+          
+      </div>
 
+      
 
-
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
-
-<div class="doc_comments">
-
-</div>
-
-
-
+      <div class="site-footer">
+  <div class="slogan">null</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
   </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://etmmdf.coding-pages.com/atom.xml" target="_blank">RSS</a>
 </div>
 
 
-
-      </div>
-
-
-
-
     </div>
+    <script type="application/javascript">
 
-   <div class="footer">
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/><div class="site_footer_wrap"><div class="site_footer">
+hljs.initHighlightingOnLoad()
 
-      <div class="mysocials"><div class="my_socials">
-		   
-			   
-    
-			   
-    
-			   
-    
-			   
-    
-</div><link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      </div>
-
-      <div class="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-      </div>
-
-</div></div>
-
-    </div>
-
-
-<style type="text/css">a.back_to_top {
-    text-decoration: none;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    background: #f0f0f0;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 36px;
-    font-size: 18px;
-    text-align: center;
-    transition-duration: .5s;
-    transition-propety: background-color;
-    display: none;
-}
-
-a.back_to_top span {
-    color: #888;
-}
-
-a.back_to_top:hover {
-    cursor: pointer;
-    background: #dfdfdf;
-}
-
-a.back_to_top:hover span {
-    color: #555;
-}
-
-@media print, screen and (max-width: 580px) {
-    .back_to_top {
-        display: none !important;
-    }
-}
-
-
-
-</style><a id="back_to_top" href="#" class="back_to_top"><span>△</span>
-</a>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/jquery.js"></script>
-
-<script>$(document).ready((function(_this) {
-  return function() {
-    var bt;
-    bt = $('#back_to_top');
-    if ($(document).width() > 480) {
-      $(window).scroll(function() {
-        var st;
-        st = $(window).scrollTop();
-        if (st > 30) {
-          return bt.css('display', 'block');
-        } else {
-          return bt.css('display', 'none');
-        }
-      });
-      return bt.click(function() {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 800);
-        return false;
-      });
-    }
-  };
-})(this));
 </script>
 
-</body>
 
+
+
+  </body>
 </html>

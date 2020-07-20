@@ -1,313 +1,150 @@
 
+<!DOCTYPE html>
 <html>
-  <head lang="zh">
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-        <meta content="yes" name="apple-mobile-web-app-capable"/>
-        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-        <meta content="telephone=no" name="format-detection"/>
-        <meta name="renderer" content="webkit">
-    <title>我去过苗寨 | 凹鱼的博客</title>
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/jquery.js"></script>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/basic.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>我去过苗寨 | 凹鱼的博客</title>
+<meta name="description" content="null">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://etmmdf.coding-pages.com/favicon.ico?v=1595231818296">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://etmmdf.coding-pages.com/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
 
   </head>
-
   <body>
-     <div class="header">
-      <div class="logo_title">
-		  
-        <div class="title animated fadeInDown"><img src="https://etmmdf.coding-pages.com/images/avatar.png?v=1595231708423"/>
-
-          <h1 title="凹鱼的博客" class="weaklink"><a href="/">凹鱼的博客</a>
-
-          </h1>
-
-          <div class="navbar weaklink">
-            <div class="normal_nav">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-		
-      <ul class="mixed_site_nav site_nav sm sm-base">
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
- 
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://etmmdf.coding-pages.com">
+        <img class="avatar" src="https://etmmdf.coding-pages.com/images/avatar.png?v=1595231818296" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://etmmdf.coding-pages.com">
+        <h1 class="site-title">凹鱼的博客</h1>
+      </a>
     </div>
-
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
 </div>
 
-            </div>
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
 
-            <div class="hamberger"><i class="fa fa-bars"></i>
-<i class="fa fa-times"></i>
 
-            </div>
-
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">我去过苗寨</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2012-03-13</span>
+            
           </div>
-
-        </div>
-
-      </div>
-
-      <div class="hidden_nav animated fadeInDown">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-      <ul class="mixed_site_nav site_nav sm sm-base">
-		  
-	
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
-
-
-
-
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
-</div>
-
-      </div>
-
-    </div>
-
-
-    <div class="main">
-      <div class="main-inner">
-
-
-<div class="content">
-
-
-
-
-
-
-  <div class="post_page" >
-
-<div class="post">
-  <div class="post_title sm_margin">
-    <h2><a>我去过苗寨</a>
-
-
-
-    </h2>
-  </div>
-
-  <div class="post_details">
-    <div class="info"><i class="fa fa-clock-o"></i>
-<span class="date_info">2012-03-13</span>
-<i class="fa fa-eye"></i>
-
-<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
-
-
-<i class="fa fa-bookmark-o"></i>
-<span class="tags_info weaklink">
-	
-
-</span>
-
-
-    </div>
-
-  </div>
-
-
-
-
-
-  <div class="post_content markdown"><p class="md_block">
-    <span class="md_line md_line_start md_line_end"><p>07年的时候去过一趟贵州，跟着小初，筹划由他，我只负责游山玩水。不过不像现在，到了假期，兴之所致，只要不是出国，即使是新疆内蒙，下下决心还是可以成行的，那时候的根本问题是没有钱，那年跟姐姐们讨了些钱才能出发，一路上节约为本，能搭车的尽量搭车，不能搭车的走乡道直到搭上车，玩的不亦乐乎呀，现在看起来还有点小清新。</p>
+          <div class="post-content">
+            <p>07年的时候去过一趟贵州，跟着小初，筹划由他，我只负责游山玩水。不过不像现在，到了假期，兴之所致，只要不是出国，即使是新疆内蒙，下下决心还是可以成行的，那时候的根本问题是没有钱，那年跟姐姐们讨了些钱才能出发，一路上节约为本，能搭车的尽量搭车，不能搭车的走乡道直到搭上车，玩的不亦乐乎呀，现在看起来还有点小清新。</p>
 <p>印象最深的还是去苗寨，我们总共去了两个苗寨，名字都忘了，但是大略过程我还记得，其中一个苗寨是挺有名气的苗寨，去那儿的人是慕名而去的，这个苗寨是我们计划内的，另一个苗寨还没有什么名气，我也不知道我们是怎么过去的，但是我印象深的还是这个没有名气的苗寨。</p>
 <p>这个苗寨还分上下两寨，其实就是一个在山上，一个在山下的关系，两地差不多距离一公里的山路，上寨已经被开发的挺成熟的了，游客也多，下寨才刚要开发的意思，游客当然也少。</p>
 <p>我和小初就投宿在一个家庭旅馆里，住宿只收我们十五块钱每人，虽然我们俩共睡一张大床，但出门在外能够有这么便宜的铺子，我们不怀疑它是黑店，已经喜出望外了。我们把行李放在主人家，在寨子里闲溜达。因为时候恰逢五一，也许又碰上苗民的节日，寨子里格外热闹，歌声不断，公路底下的水边还有斗牛比赛，看上去似乎都是农家的牛，牵来这里似乎是为了增添节日热闹，桥上桥下都是围观的人，两头黄牛则不紧不慢，似乎商量好似的互相绕圈，我们和身边的游客聊天搭讪，然后就步行去上寨看一看，刚才说上寨已经开发的挺成熟的了，确实如此，傍晚的上寨正在举行群舞会，也就是一个人搭着前一个人的肩膀左右晃动，时而是游客时而是苗民，热闹非凡。在那个小场地的边上就是卖苗族饰品的，几块的几十块都有，当然免不了漫天要价的小贩，我买了一个戒指送给了表妹，苗银说是银其实银含量是极低的。</p>
 <p>在上寨玩了一会儿就回下寨了，没想到老板正在等我们开饭，还是吃新杀的全猪宴，当然还有苗家自酿的米酒，用土碗喝，一干就一碗，那可是一点儿都不带不含糊的，那时候我自信酒量过人，但是最后怎么上的床却是完全不知道了，我喝了那么多年酒，碰到酒量一般的自然能技压群雄，即使碰到高手也能金蝉脱壳，可是在下寨第一次知道什么叫做不省人事，也算是奇遇。</p>
 <p>一晚上的住宿再加上晚上的酒饭和第二天的午饭，老板最后还很不好意思的收了我们三十块钱，我们做穷学生的自然是当捡到了大便宜了，虽然我们跟老板一样不好意思，但是也厚着脸皮给了三十块，现在想起来真是惭愧。</p>
 <p>说苗族是蚩尤的后裔，蚩尤曾率甲士与黄帝战于黄河，流血漂橹，死伤无数，由是有楚巫使死者回魂，得以回乡正首，是为赶尸，蚩尤战败后，部族退入南方深山，其地多毒虫瘴气，有养毒虫者，是为养蛊。</p>
-</p>
 
-     <p class="md_block">
-    <div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" src="https://etmmdf.coding-pages.com/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img class="wechat-img" src="https://etmmdf.coding-pages.com/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
-</p> 
-</div>
+          </div>
+        </div>
 
-</div>
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://etmmdf.coding-pages.com/post/ni-hao-da-wei/">
+              <h3 class="post-title">
+                下一篇：你好，大卫
+              </h3>
+            </a>
+          </div>
+          
+      </div>
 
+      
 
-
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
-
-<div class="doc_comments">
-
-</div>
-
-
-
+      <div class="site-footer">
+  <div class="slogan">null</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
   </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://etmmdf.coding-pages.com/atom.xml" target="_blank">RSS</a>
 </div>
 
 
-
-      </div>
-
-
-
-
     </div>
+    <script type="application/javascript">
 
-   <div class="footer">
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/><div class="site_footer_wrap"><div class="site_footer">
+hljs.initHighlightingOnLoad()
 
-      <div class="mysocials"><div class="my_socials">
-		   
-			   
-    
-			   
-    
-			   
-    
-			   
-    
-</div><link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      </div>
-
-      <div class="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-      </div>
-
-</div></div>
-
-    </div>
-
-
-<style type="text/css">a.back_to_top {
-    text-decoration: none;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    background: #f0f0f0;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 36px;
-    font-size: 18px;
-    text-align: center;
-    transition-duration: .5s;
-    transition-propety: background-color;
-    display: none;
-}
-
-a.back_to_top span {
-    color: #888;
-}
-
-a.back_to_top:hover {
-    cursor: pointer;
-    background: #dfdfdf;
-}
-
-a.back_to_top:hover span {
-    color: #555;
-}
-
-@media print, screen and (max-width: 580px) {
-    .back_to_top {
-        display: none !important;
-    }
-}
-
-
-
-</style><a id="back_to_top" href="#" class="back_to_top"><span>△</span>
-</a>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/jquery.js"></script>
-
-<script>$(document).ready((function(_this) {
-  return function() {
-    var bt;
-    bt = $('#back_to_top');
-    if ($(document).width() > 480) {
-      $(window).scroll(function() {
-        var st;
-        st = $(window).scrollTop();
-        if (st > 30) {
-          return bt.css('display', 'block');
-        } else {
-          return bt.css('display', 'none');
-        }
-      });
-      return bt.click(function() {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 800);
-        return false;
-      });
-    }
-  };
-})(this));
 </script>
 
-</body>
 
+
+
+  </body>
 </html>

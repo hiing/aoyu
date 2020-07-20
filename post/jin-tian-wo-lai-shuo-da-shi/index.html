@@ -1,184 +1,92 @@
 
+<!DOCTYPE html>
 <html>
-  <head lang="zh">
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
-        <meta content="yes" name="apple-mobile-web-app-capable"/>
-        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
-        <meta content="telephone=no" name="format-detection"/>
-        <meta name="renderer" content="webkit">
-    <title>今天我来说大师 | 凹鱼的博客</title>
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/jquery.js"></script>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/basic.js"></script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>今天我来说大师 | 凹鱼的博客</title>
+<meta name="description" content="null">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://etmmdf.coding-pages.com/favicon.ico?v=1595231818296">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://etmmdf.coding-pages.com/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
 
   </head>
-
   <body>
-     <div class="header">
-      <div class="logo_title">
-		  
-        <div class="title animated fadeInDown"><img src="https://etmmdf.coding-pages.com/images/avatar.png?v=1595231708423"/>
-
-          <h1 title="凹鱼的博客" class="weaklink"><a href="/">凹鱼的博客</a>
-
-          </h1>
-
-          <div class="navbar weaklink">
-            <div class="normal_nav">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-		
-      <ul class="mixed_site_nav site_nav sm sm-base">
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
- 
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
- 
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://etmmdf.coding-pages.com">
+        <img class="avatar" src="https://etmmdf.coding-pages.com/images/avatar.png?v=1595231818296" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://etmmdf.coding-pages.com">
+        <h1 class="site-title">凹鱼的博客</h1>
+      </a>
     </div>
-
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
 </div>
 
-            </div>
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
 
-            <div class="hamberger"><i class="fa fa-bars"></i>
-<i class="fa fa-times"></i>
 
-            </div>
-
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">今天我来说大师</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2010-06-25</span>
+            
           </div>
-
-        </div>
-
-      </div>
-
-      <div class="hidden_nav animated fadeInDown">
-
-<div class="bitcron_nav_container">
-
-
-  <div class="bitcron_nav">
-    <div class="mixed_site_nav_wrap site_nav_wrap">
-      <ul class="mixed_site_nav site_nav sm sm-base">
-		  
-	
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
-
-  </li>
-
-
-  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
-
-  </li>
-
-
-
-
-
-      </ul>
-
-      <div class="clear clear_nav_inline_end"></div>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="clear clear_nav_end"></div>
-
-</div>
-
-      </div>
-
-    </div>
-
-
-    <div class="main">
-      <div class="main-inner">
-
-
-<div class="content">
-
-
-
-
-
-
-  <div class="post_page" >
-
-<div class="post">
-  <div class="post_title sm_margin">
-    <h2><a>今天我来说大师</a>
-
-
-
-    </h2>
-  </div>
-
-  <div class="post_details">
-    <div class="info"><i class="fa fa-clock-o"></i>
-<span class="date_info">2010-06-25</span>
-<i class="fa fa-eye"></i>
-
-<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
-
-
-<i class="fa fa-bookmark-o"></i>
-<span class="tags_info weaklink">
-	
-
-</span>
-
-
-    </div>
-
-  </div>
-
-
-
-
-
-  <div class="post_content markdown"><p class="md_block">
-    <span class="md_line md_line_start md_line_end"><p>球赛还没开始，先来讲一讲我们单位的王大师。</p>
+          <div class="post-content">
+            <p>球赛还没开始，先来讲一讲我们单位的王大师。</p>
 <p>王大师和余大师不一样，余大师的称谓是自封的，近乎无耻，王大师却是单位公认，大师这个称号，王大师是腼腆而笑纳。</p>
 <p>同单位的还有一个叫徐高大，原因是他既是高级教师又是大律师，所以简称高大，那么王大师呢？他既是大师又是老师，所以我也把他叫王大佬。</p>
 <p>之所以称之为大师是因为王大师是练气功的，据说气功能养生，这玩意儿我就在报纸上见过，还没见过真人，大师是第一个，大师为了练气功可谓颇煞苦心，年纪三十好几还没娶妻，我认识的很多人，这把年纪都纳了好几个妾了呢，大师说近了女色会破功的，是啊对于练气功的人来说破功无疑是灭顶之灾，海子不就是被人破了功去自杀的么，可是，大师你真有功么？</p>
@@ -187,129 +95,58 @@
 <p>话说回来大师作为一个数学老师可以说是相当牛逼了，有一次月考他的班的数学平均分超出其他班三十分之多，这可以说是相当不得体了，我看见别的数学老师一张老脸真是紫一阵红一阵，我看着暗自偷笑，但是大师很淡定，说：唉，正常发挥而已。</p>
 <p>可是考试考的好，学生却极不喜欢他，这又是非常有趣的地方，因为大师非常凶，不过大师对我很好啊，经常叫我吃东西，刚才给我看球特地送来啤酒来，当然是我之前存在他冰箱里，又给我送来了牦牛肉，真是凭轩涕泗流啊。</p>
 <p>看球去了！！</p>
-</p>
 
-     <p class="md_block">
-    <div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" src="https://etmmdf.coding-pages.com/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img class="wechat-img" src="https://etmmdf.coding-pages.com/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
-</p> 
-</div>
+          </div>
+        </div>
 
-</div>
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://etmmdf.coding-pages.com/post/xue-sheng-shi-yi-shou/">
+              <h3 class="post-title">
+                下一篇：学生诗一首
+              </h3>
+            </a>
+          </div>
+          
+      </div>
 
+      
 
-
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
-
-<div class="doc_comments">
-
-</div>
-
-
-
+      <div class="site-footer">
+  <div class="slogan">null</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
   </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://etmmdf.coding-pages.com/atom.xml" target="_blank">RSS</a>
 </div>
 
 
-
-      </div>
-
-
-
-
     </div>
+    <script type="application/javascript">
 
-   <div class="footer">
-<link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/><div class="site_footer_wrap"><div class="site_footer">
+hljs.initHighlightingOnLoad()
 
-      <div class="mysocials"><div class="my_socials">
-		   
-			   
-    
-			   
-    
-			   
-    
-			   
-    
-</div><link href="https://etmmdf.coding-pages.com/styles/main.css" type="text/css" rel="stylesheet"/>
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      </div>
-
-      <div class="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-      </div>
-
-</div></div>
-
-    </div>
-
-
-<style type="text/css">a.back_to_top {
-    text-decoration: none;
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    background: #f0f0f0;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 36px;
-    font-size: 18px;
-    text-align: center;
-    transition-duration: .5s;
-    transition-propety: background-color;
-    display: none;
-}
-
-a.back_to_top span {
-    color: #888;
-}
-
-a.back_to_top:hover {
-    cursor: pointer;
-    background: #dfdfdf;
-}
-
-a.back_to_top:hover span {
-    color: #555;
-}
-
-@media print, screen and (max-width: 580px) {
-    .back_to_top {
-        display: none !important;
-    }
-}
-
-
-
-</style><a id="back_to_top" href="#" class="back_to_top"><span>△</span>
-</a>
-<script type="text/javascript" src="https://etmmdf.coding-pages.com/media/scripts/jquery.js"></script>
-
-<script>$(document).ready((function(_this) {
-  return function() {
-    var bt;
-    bt = $('#back_to_top');
-    if ($(document).width() > 480) {
-      $(window).scroll(function() {
-        var st;
-        st = $(window).scrollTop();
-        if (st > 30) {
-          return bt.css('display', 'block');
-        } else {
-          return bt.css('display', 'none');
-        }
-      });
-      return bt.click(function() {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 800);
-        return false;
-      });
-    }
-  };
-})(this));
 </script>
 
-</body>
 
+
+
+  </body>
 </html>

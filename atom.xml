@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://scm.github.io</id>
+    <id>https://hiing.github.io</id>
     <title>Gridea</title>
-    <updated>2020-07-20T05:16:19.538Z</updated>
+    <updated>2020-07-20T05:19:07.759Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://scm.github.io"/>
-    <link rel="self" href="https://scm.github.io/atom.xml"/>
+    <link rel="alternate" href="https://hiing.github.io"/>
+    <link rel="self" href="https://hiing.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://scm.github.io/images/avatar.png</logo>
-    <icon>https://scm.github.io/favicon.ico</icon>
+    <logo>https://hiing.github.io/images/avatar.png</logo>
+    <icon>https://hiing.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[七夕节致我情深意重的女友李青]]></title>
-        <id>https://scm.github.io/post/qi-xi-jie-zhi-wo-qing-shen-yi-chong-de-nu-you-li-qing/</id>
-        <link href="https://scm.github.io/post/qi-xi-jie-zhi-wo-qing-shen-yi-chong-de-nu-you-li-qing/">
+        <id>https://hiing.github.io/post/qi-xi-jie-zhi-wo-qing-shen-yi-chong-de-nu-you-li-qing/</id>
+        <link href="https://hiing.github.io/post/qi-xi-jie-zhi-wo-qing-shen-yi-chong-de-nu-you-li-qing/">
         </link>
         <updated>2013-08-09T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>题目越长越好，爱情最久最牢。</p>
@@ -25,8 +25,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[基层设计]]></title>
-        <id>https://scm.github.io/post/ji-ceng-she-ji/</id>
-        <link href="https://scm.github.io/post/ji-ceng-she-ji/">
+        <id>https://hiing.github.io/post/ji-ceng-she-ji/</id>
+        <link href="https://hiing.github.io/post/ji-ceng-she-ji/">
         </link>
         <updated>2013-08-07T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>专制给地方带来的不利影响之一就是它使地方上出现除了因为财产造成的不平等之外的另外一种不平等，即权力不平等。中国历史上的农民起义的引子也正是后者。今天中国社会最大裂谷之一～～同时。良方之一为地方自治，今天所谓顶层设计，实在不关痛痒也！</p>
@@ -34,8 +34,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[驾校教练就是人渣]]></title>
-        <id>https://scm.github.io/post/jia-xiao-jiao-lian-jiu-shi-ren-zha/</id>
-        <link href="https://scm.github.io/post/jia-xiao-jiao-lian-jiu-shi-ren-zha/">
+        <id>https://hiing.github.io/post/jia-xiao-jiao-lian-jiu-shi-ren-zha/</id>
+        <link href="https://hiing.github.io/post/jia-xiao-jiao-lian-jiu-shi-ren-zha/">
         </link>
         <updated>2013-08-05T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>重新开始写博客。博客基调主要是骂人。今天骂驾校教练！</p>
@@ -44,8 +44,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[明日之星的通告]]></title>
-        <id>https://scm.github.io/post/ming-ri-zhi-xing-de-tong-gao/</id>
-        <link href="https://scm.github.io/post/ming-ri-zhi-xing-de-tong-gao/">
+        <id>https://hiing.github.io/post/ming-ri-zhi-xing-de-tong-gao/</id>
+        <link href="https://hiing.github.io/post/ming-ri-zhi-xing-de-tong-gao/">
         </link>
         <updated>2012-08-06T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>有些事说起来很伤心，譬如鲍傻妞她妈妈在两三年前说我长的老相，譬如今年我考上研究生同时拒绝一个公务员的岗位的时候，有一位小姑娘同事对我说你太牛了你改变了你在我心目中的形象……姊妹，你这是夸我么？</p>
@@ -59,8 +59,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[妈妈，我把钥匙丢了]]></title>
-        <id>https://scm.github.io/post/ma-ma-wo-ba-yao-chi-diu-liao/</id>
-        <link href="https://scm.github.io/post/ma-ma-wo-ba-yao-chi-diu-liao/">
+        <id>https://hiing.github.io/post/ma-ma-wo-ba-yao-chi-diu-liao/</id>
+        <link href="https://hiing.github.io/post/ma-ma-wo-ba-yao-chi-diu-liao/">
         </link>
         <updated>2012-06-02T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>明天就是六四第二十三个年头了，从知道有六四这件事开始，每年到这个日子，心情都会沉重一下。</p>
@@ -75,8 +75,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[土 拨 鼠]]></title>
-        <id>https://scm.github.io/post/tu-bo-shu/</id>
-        <link href="https://scm.github.io/post/tu-bo-shu/">
+        <id>https://hiing.github.io/post/tu-bo-shu/</id>
+        <link href="https://hiing.github.io/post/tu-bo-shu/">
         </link>
         <updated>2012-05-05T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>翟永明的诗我就只喜欢这一首：它满怀的黑夜满载忧患  冲破我一次次的手稿  小小的可人的东西  在爱情中容易受伤。尤其喜欢这一句。全诗摘录在下面。</p>
@@ -155,8 +155,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[说说最近香港片]]></title>
-        <id>https://scm.github.io/post/shuo-shuo-zui-jin-xiang-gang-pian/</id>
-        <link href="https://scm.github.io/post/shuo-shuo-zui-jin-xiang-gang-pian/">
+        <id>https://hiing.github.io/post/shuo-shuo-zui-jin-xiang-gang-pian/</id>
+        <link href="https://hiing.github.io/post/shuo-shuo-zui-jin-xiang-gang-pian/">
         </link>
         <updated>2012-05-02T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>这几年港片实在乏善可陈，导演明星似乎都在吃老本，再不争口气，过几年，大陆再多几个宁浩这样的导演，又加上有港片情节的人渐渐断层，香港电影圈岂不是都要喝西北风，又去tvb跑龙套了？</p>
@@ -171,8 +171,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[宿舍楼来了只小狗]]></title>
-        <id>https://scm.github.io/post/su-she-lou-lai-liao-zhi-xiao-gou/</id>
-        <link href="https://scm.github.io/post/su-she-lou-lai-liao-zhi-xiao-gou/">
+        <id>https://hiing.github.io/post/su-she-lou-lai-liao-zhi-xiao-gou/</id>
+        <link href="https://hiing.github.io/post/su-she-lou-lai-liao-zhi-xiao-gou/">
         </link>
         <updated>2012-04-18T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>前几天，楼下突然出现一只白色的小狗，大概三个礼拜那么大，在楼下待了四天，从原来的白色变成现在灰白了，不过倒是没饿着它，每天一根天朝香肠，偶尔从食堂带点大排骨头，啧啧，美的它呢，但是我还是不肯洗这来路不明的生灵，再说了，我自己都懒地洗自己，刚才，我口哨一响，它就屁啊屁啊跑到我门口，大大方方往里间走去，挑了个最暖和的角落，把我的衬衣--所幸是要丢掉的--当褥子，趴下就睡。</p>
@@ -185,8 +185,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[推荐四部韩国电影]]></title>
-        <id>https://scm.github.io/post/tui-jian-si-bu-han-guo-dian-ying/</id>
-        <link href="https://scm.github.io/post/tui-jian-si-bu-han-guo-dian-ying/">
+        <id>https://hiing.github.io/post/tui-jian-si-bu-han-guo-dian-ying/</id>
+        <link href="https://hiing.github.io/post/tui-jian-si-bu-han-guo-dian-ying/">
         </link>
         <updated>2012-04-05T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>话不多说，我不是一个能写影评的人，我只知道好看还是不好看。最近六七年来，韩国出产了许多出色的电影，无论如何，一部电影只要有杰出的演技，精致的剧本，充满艺术感的镜头，对人性无休止的拷问，它不精彩才怪呢。</p>
@@ -199,8 +199,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[纪念海子]]></title>
-        <id>https://scm.github.io/post/ji-nian-hai-zi/</id>
-        <link href="https://scm.github.io/post/ji-nian-hai-zi/">
+        <id>https://hiing.github.io/post/ji-nian-hai-zi/</id>
+        <link href="https://hiing.github.io/post/ji-nian-hai-zi/">
         </link>
         <updated>2012-03-26T16:00:00.000Z</updated>
         <content type="html"><![CDATA[<p>一、中国最后的乡村诗人</p>

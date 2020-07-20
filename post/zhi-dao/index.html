@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>知道…… | Gridea</title>
+<link rel="shortcut icon" href="https://scm.github.io/favicon.ico?v=1595222173024">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://scm.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="知道…… | Gridea - Atom Feed" href="https://scm.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="题目是这样的：_知道“周迅”的人越来越多，知道“鲁迅”的人越来越少：
+知道“马克”的人越来越多，知道“马克.吐温”的人越来越少；
+知道“景岗山”的人越来越多，知道“井岗山”的人越来越少；
+知道“比尔.盖茨”的人越来越多，知道“保尔.柯察金”..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://scm.github.io">
+  <img class="avatar" src="https://scm.github.io/images/avatar.png?v=1595222173024" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              知道……
+            </h2>
+            <div class="post-info">
+              <span>
+                2009-09-21
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>题目是这样的：_知道“周迅”的人越来越多，知道“鲁迅”的人越来越少：</p>
+<p>知道“马克”的人越来越多，知道“马克.吐温”的人越来越少；</p>
+<p>知道“景岗山”的人越来越多，知道“井岗山”的人越来越少；</p>
+<p>知道“比尔.盖茨”的人越来越多，知道“保尔.柯察金”的人越来越少；</p>
+<p>知道“关之琳”的人越来越多，知道“卞之琳”的人越来越少；</p>
+<p>知道“就要发（918）”的人越来越多，知道“九一八”的人越来越少。_</p>
+<p>根据这样的句式造句，有学生说：知道王宝强的人越来越多了，知道许三多的人越来越少了。（开始</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://scm.github.io/post/you-guan-feng-wen-bing/">
+              <h3 class="post-title">
+                有关冯文炳
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://scm.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

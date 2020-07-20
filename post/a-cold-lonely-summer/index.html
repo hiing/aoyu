@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>a cold lonely summer | Gridea</title>
+<link rel="shortcut icon" href="https://scm.github.io/favicon.ico?v=1595222173024">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://scm.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="a cold lonely summer | Gridea - Atom Feed" href="https://scm.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="“我又一次梦见了那条龙，他盘在屋顶上，两只眼睛死死的盯着我，他问我你是谁?我说我是贾宏声，他说贾宏声又是谁?我说贾宏声毕业于中央戏剧学院，是个演员，热爱摇滚乐，爱列侬和罗伯特普兰特，曾经想成为个名伟大的演员，也想组建一支伟大的乐队。他说你什..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://scm.github.io">
+  <img class="avatar" src="https://scm.github.io/images/avatar.png?v=1595222173024" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              a cold lonely summer
+            </h2>
+            <div class="post-info">
+              <span>
+                2010-07-06
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>“我又一次梦见了那条龙，他盘在屋顶上，两只眼睛死死的盯着我，他问我你是谁?我说我是贾宏声，他说贾宏声又是谁?我说贾宏声毕业于中央戏剧学院，是个演员，热爱摇滚乐，爱列侬和罗伯特普兰特，曾经想成为个名伟大的演员，也想组建一支伟大的乐队。他说你什么都不是，就是一个人，你爱吃面条，鸡蛋，爱穿时髦的衣服，可以哭也可以笑，受不了的时候还可以求人。我问他我为什么在这呢?他说这是对你的惩罚，因为你身上恶的东西太多了，必须把这些恶的东西清理出去，你才能彻底干净。我问他我干净了吗?他没有回答，两只眼睛还是死死的盯着我，然后就飞走了，你就是一个人你就是一个人一个人你就是一个人你就是一个人。”</p>
+<p>谁说这个世界上没有为理念而死的人，他活得并不伟大，但是干净，所以他死得纯粹。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://scm.github.io/post/xiu-ru/">
+              <h3 class="post-title">
+                羞辱
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://scm.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

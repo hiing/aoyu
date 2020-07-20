@@ -1,0 +1,203 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>学生诗三首 | Gridea</title>
+<link rel="shortcut icon" href="https://scm.github.io/favicon.ico?v=1595222173024">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://scm.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="学生诗三首 | Gridea - Atom Feed" href="https://scm.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="今天的云
+今天的
+凝固在西边的天
+是高更的灵
+将所有颜色摆
+最后调成一股灰
+和一个老头的微笑
+聆
+一阵狰
+恢弘的部队走过
+**南大
+-----献给六十周年**
+挺拔的南大
+你为何欺骗
+少年在你身边
+听你的身躯在流
+温柔的南大
+请别再欺骗
+我..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://scm.github.io">
+  <img class="avatar" src="https://scm.github.io/images/avatar.png?v=1595222173024" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              学生诗三首
+            </h2>
+            <div class="post-info">
+              <span>
+                2009-09-29
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p><strong>今天的云</strong></p>
+<p>今天的</p>
+<p>凝固在西边的天</p>
+<p>是高更的灵</p>
+<p>将所有颜色摆</p>
+<p>最后调成一股灰</p>
+<p>和一个老头的微笑</p>
+<p>聆</p>
+<p>一阵狰</p>
+<p>恢弘的部队走过</p>
+<p>**南大</p>
+<p>-----献给六十周年**</p>
+<p>挺拔的南大</p>
+<p>你为何欺骗</p>
+<p>少年在你身边</p>
+<p>听你的身躯在流</p>
+<p>温柔的南大</p>
+<p>请别再欺骗</p>
+<p>我没在想什</p>
+<p>只是唱</p>
+<!-- more -->
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://scm.github.io/post/xiao-shen-ke-de-jiu-shu/">
+              <h3 class="post-title">
+                肖申克的救赎
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://scm.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

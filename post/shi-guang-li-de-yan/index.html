@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>时光里的盐 | Gridea</title>
+<link rel="shortcut icon" href="https://scm.github.io/favicon.ico?v=1595222173024">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://scm.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="时光里的盐 | Gridea - Atom Feed" href="https://scm.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="整整一年时间，虽然来这个博客的次数真的屈指可数，但是我确实还没有忘记这里。
+这一年时间是我人生最漫长的一年，它使我这一整年来没有时光倏忽而过的感受，而是作为旁观者看着它缓缓流去，仿佛在认真地观察着一个将死之人要流尽最后一滴血。
+而幸好的是，..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://scm.github.io">
+  <img class="avatar" src="https://scm.github.io/images/avatar.png?v=1595222173024" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              时光里的盐
+            </h2>
+            <div class="post-info">
+              <span>
+                2012-03-01
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>整整一年时间，虽然来这个博客的次数真的屈指可数，但是我确实还没有忘记这里。</p>
+<p>这一年时间是我人生最漫长的一年，它使我这一整年来没有时光倏忽而过的感受，而是作为旁观者看着它缓缓流去，仿佛在认真地观察着一个将死之人要流尽最后一滴血。</p>
+<p>而幸好的是，我还有时光里的盐，如果没有这滋味的结晶，我将带着乏味和无知消磨掉整个人生。</p>
+<p>昨天，翻书突然翻到那首让我找了很久的诗：</p>
+<p>我的朋友，</p>
+<p>分别的时刻已经临近</p>
+<p>再见了</p>
+<p>我能对你说些什么呢</p>
+<p>说春天的寒冷</p>
+<p>说你像腊梅一样凋零</p>
+<p>不，还是说欢乐吧</p>
+<p>说明天的欢乐</p>
+<p>说纯净蓝色的天空</p>
+<p>说野外金黄的花朵</p>
+<p>说孩子透明的眼睛</p>
+<p>总之，我们要向男子汉一样分手</p>
+<p>你说对吗？</p>
+<p>韩寒的书是他自己写的。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://scm.github.io/post/guan-yu-yi-shi/">
+              <h3 class="post-title">
+                关于译事
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://scm.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,92 +1,184 @@
 
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
-<title>看牙记（旧文） | 凹鱼的博客</title>
-<meta name="description" content="null">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://scm.pgx.me/favicon.ico?v=1639990227338">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://scm.pgx.me/styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
+  <head lang="zh">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <meta name="renderer" content="webkit">
+    <title>看牙记（旧文） | 凹鱼的博客</title>
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/basic.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
   </head>
+
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://scm.pgx.me">
-        <img class="avatar" src="https://scm.pgx.me/images/avatar.png?v=1639990227338" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://scm.pgx.me">
-        <h1 class="site-title">凹鱼的博客</h1>
-      </a>
+     <div class="header">
+      <div class="logo_title">
+		  
+        <div class="title animated fadeInDown"><img src="https://scm.pgx.me/images/avatar.png?v=1639990417836"/>
+
+          <h1 title="凹鱼的博客" class="weaklink"><a href="/">凹鱼的博客</a>
+
+          </h1>
+
+          <div class="navbar weaklink">
+            <div class="normal_nav">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+		
+      <ul class="mixed_site_nav site_nav sm sm-base">
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+ 
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+
   </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
 </div>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
+            </div>
 
+            <div class="hamberger"><i class="fa fa-bars"></i>
+<i class="fa fa-times"></i>
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">看牙记（旧文）</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2012-03-06</span>
-            
+            </div>
+
           </div>
-          <div class="post-content">
-            <p>刚听说韩寒有过这么一句话---人不闹到牙疼，总不愿意去看牙医，不管是因为长了智齿还是蛀牙---大概意思如此吧，想来真有道理，和他那句“被子本来就是摊开来睡的叠它作甚”有的一比。不过，不到黄河心不死，不见棺材不流泪，终究是人的天性，扩而大之，微而缩之，古往今来总是如此。只是小孩子因为大人的疏忽而遭无妄之灾则显得无辜可怜，我现在看那时候的自己--11岁的小学生，不同于如今这般尖削的圆脑袋，虽然是一样的矮身材，竟像看到另一个人一样，而现在的我会对他心生怜悯，仿佛看到了一幕他人的辛苦遭遇。但这并不是可鄙的自艾自怜，这我十分清楚。</p>
+
+        </div>
+
+      </div>
+
+      <div class="hidden_nav animated fadeInDown">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+      <ul class="mixed_site_nav site_nav sm sm-base">
+		  
+	
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+
+
+
+
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
+</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="main">
+      <div class="main-inner">
+
+
+<div class="content">
+
+
+
+
+
+
+  <div class="post_page" >
+
+<div class="post">
+  <div class="post_title sm_margin">
+    <h2><a>看牙记（旧文）</a>
+
+
+
+    </h2>
+  </div>
+
+  <div class="post_details">
+    <div class="info"><i class="fa fa-clock-o"></i>
+<span class="date_info">2012-03-06</span>
+<i class="fa fa-eye"></i>
+
+<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
+
+
+<i class="fa fa-bookmark-o"></i>
+<span class="tags_info weaklink">
+	
+
+</span>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="post_content markdown"><p class="md_block">
+    <span class="md_line md_line_start md_line_end"><p>刚听说韩寒有过这么一句话---人不闹到牙疼，总不愿意去看牙医，不管是因为长了智齿还是蛀牙---大概意思如此吧，想来真有道理，和他那句“被子本来就是摊开来睡的叠它作甚”有的一比。不过，不到黄河心不死，不见棺材不流泪，终究是人的天性，扩而大之，微而缩之，古往今来总是如此。只是小孩子因为大人的疏忽而遭无妄之灾则显得无辜可怜，我现在看那时候的自己--11岁的小学生，不同于如今这般尖削的圆脑袋，虽然是一样的矮身材，竟像看到另一个人一样，而现在的我会对他心生怜悯，仿佛看到了一幕他人的辛苦遭遇。但这并不是可鄙的自艾自怜，这我十分清楚。</p>
 <p>十四年前，我就这样被我的母亲带到象山中医院看牙医。这位牙医姓郑或者姓丁，我已经不记得了，只是三年前我去中医院拔牙，凑巧仍是他施“钳刑”，他的模样我就记得更清楚了。当然，医生们戴着口罩，再清楚也只是个模样，一个大胖脑袋，身材魁梧--我指的是壮而并非那样高，一副有锈迹的眼镜，自然一身白大褂，令人五味杂陈的是，他居然还记得十年前的我。</p>
 <p>那年，我的牙齿蛀到了不能吃饭的地步，两颗大牙的“天灵盖”已经统统被牙虫吃完，倒是除了牙盖剩下的“围墙”还十分完整，可是牙肉已经冒出来，充塞了整个牙周内里，我不懂这是什么现象，大概可以说是息肉吧，而且左右两颗大牙同是如此，所以十几岁的我吃东西像老太太一样用门牙咀嚼，没有办法，最后只能上医院。</p>
 <p>郑医生（先姑且叫着）看了我的牙，劈头来给我的母亲一顿骂，不过是批评母亲不懂及时治理之类的话。其实做一个医生，送一个病人来，治好就好，治不好拉倒，全不必多话，毕竟话多无益，可是郑医生那一席话将我的母亲说的手足无措，让一个成年人那样的窘促，我再也没有见过了，说回来也只有医生敢如此了，我做老师便只能训训未成年学生，有时还尚且得察言观色呢，但是敢于批评学生的老师是好老师，喜欢批评病人的医生是好医生。郑医生如长官批评下属般，觉得批评的似“酒足饭饱”，于是准备给我治疗，我的母亲在旁边松了口气，不敢多说什么，只在旁边握着我的手---我想这很重要，就在前天，我在牙科看到一对父母带着孩子看牙医，孩子不肯配合，父母安慰无效便没了耐心，两口子一齐上去给孩子一顿耳光，看的医生都目瞪口呆，我不是心理医生，这会留下心理阴影的吧？</p>
@@ -95,58 +187,129 @@
 <p>“手术”，无疑是成功的，郑医生兴许余意未尽又将我母亲教训一顿方才放走。</p>
 <p>只是十多年过去了，这两颗大牙又需要整修了，因为中医院挂不上号，就去了人民医院，不知道何时还能见到郑医生，当然，我也不是那么想见他，事实上，我不愿意见任何牙医，注意：任何！！</p>
 <p>还有，如果我以后有了孩子，真心绝不让他/她受这般只有回忆却毫无意义的苦楚。</p>
+</p>
 
-          </div>
-        </div>
+     <p class="md_block">
+    <div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" src="https://scm.pgx.me/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img class="wechat-img" src="https://scm.pgx.me/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+</p> 
+</div>
 
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://scm.pgx.me/post/yin-wei-ri-ben-ren-sha-liao-ren-suo-yi-li-feng-yi-bi-xu-si/">
-              <h3 class="post-title">
-                下一篇：因为日本人杀了人，所以李凤仪必须死
-              </h3>
-            </a>
-          </div>
-          
-      </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">null</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://scm.pgx.me/atom.xml" target="_blank">RSS</a>
 </div>
 
 
+
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
+
+<div class="doc_comments">
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+      </div>
+
+
+
+
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+   <div class="footer">
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/><div class="site_footer_wrap"><div class="site_footer">
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+      <div class="mysocials"><div class="my_socials">
+		   
+			   
+    
+			   
+    
+			   
+    
+			   
+    
+</div><link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
 
+      </div>
+
+      <div class="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+      </div>
+
+</div></div>
+
+    </div>
+
+
+<style type="text/css">a.back_to_top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+}
+
+a.back_to_top span {
+    color: #888;
+}
+
+a.back_to_top:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+}
+
+a.back_to_top:hover span {
+    color: #555;
+}
+
+@media print, screen and (max-width: 580px) {
+    .back_to_top {
+        display: none !important;
+    }
+}
+
+
+
+</style><a id="back_to_top" href="#" class="back_to_top"><span>△</span>
+</a>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/jquery.js"></script>
+
+<script>$(document).ready((function(_this) {
+  return function() {
+    var bt;
+    bt = $('#back_to_top');
+    if ($(document).width() > 480) {
+      $(window).scroll(function() {
+        var st;
+        st = $(window).scrollTop();
+        if (st > 30) {
+          return bt.css('display', 'block');
+        } else {
+          return bt.css('display', 'none');
+        }
+      });
+      return bt.click(function() {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    }
+  };
+})(this));
 </script>
 
+</body>
 
-
-
-  </body>
 </html>

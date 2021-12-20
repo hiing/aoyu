@@ -1,147 +1,310 @@
 
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
-<title>两周 | 凹鱼的博客</title>
-<meta name="description" content="null">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://scm.pgx.me/favicon.ico?v=1639990227338">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://scm.pgx.me/styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
+  <head lang="zh">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <meta name="renderer" content="webkit">
+    <title>两周 | 凹鱼的博客</title>
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/basic.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
   </head>
+
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://scm.pgx.me">
-        <img class="avatar" src="https://scm.pgx.me/images/avatar.png?v=1639990227338" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://scm.pgx.me">
-        <h1 class="site-title">凹鱼的博客</h1>
-      </a>
+     <div class="header">
+      <div class="logo_title">
+		  
+        <div class="title animated fadeInDown"><img src="https://scm.pgx.me/images/avatar.png?v=1639990417836"/>
+
+          <h1 title="凹鱼的博客" class="weaklink"><a href="/">凹鱼的博客</a>
+
+          </h1>
+
+          <div class="navbar weaklink">
+            <div class="normal_nav">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+		
+      <ul class="mixed_site_nav site_nav sm sm-base">
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+ 
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+
   </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
 </div>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
+            </div>
 
+            <div class="hamberger"><i class="fa fa-bars"></i>
+<i class="fa fa-times"></i>
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">两周</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2009-07-27</span>
-            
+            </div>
+
           </div>
-          <div class="post-content">
-            <p>两周里，天狗把太阳吃了一回，忘了是哪位高人说的：是牛顿毁了诗歌，他将炫目的阳光用玻璃分割成单调的色彩。但如果不是牛顿，我怕我还将是敲着锣鼓追着太阳，试图将天狗吓跑并活在各种谣言和恐惧当中的古人--可是这有一种原始美，这种原始美就是人的敬畏感和自然界的不可知，当我们看着电视里的洋洋得意的专家和愚蠢的主持人，为此我感到忧虑，作为伪文艺青年我应该感谢牛顿还是憎恨。</p>
+
+        </div>
+
+      </div>
+
+      <div class="hidden_nav animated fadeInDown">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+      <ul class="mixed_site_nav site_nav sm sm-base">
+		  
+	
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+
+
+
+
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
+</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="main">
+      <div class="main-inner">
+
+
+<div class="content">
+
+
+
+
+
+
+  <div class="post_page" >
+
+<div class="post">
+  <div class="post_title sm_margin">
+    <h2><a>两周</a>
+
+
+
+    </h2>
+  </div>
+
+  <div class="post_details">
+    <div class="info"><i class="fa fa-clock-o"></i>
+<span class="date_info">2009-07-27</span>
+<i class="fa fa-eye"></i>
+
+<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
+
+
+<i class="fa fa-bookmark-o"></i>
+<span class="tags_info weaklink">
+	
+
+</span>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="post_content markdown"><p class="md_block">
+    <span class="md_line md_line_start md_line_end"><p>两周里，天狗把太阳吃了一回，忘了是哪位高人说的：是牛顿毁了诗歌，他将炫目的阳光用玻璃分割成单调的色彩。但如果不是牛顿，我怕我还将是敲着锣鼓追着太阳，试图将天狗吓跑并活在各种谣言和恐惧当中的古人--可是这有一种原始美，这种原始美就是人的敬畏感和自然界的不可知，当我们看着电视里的洋洋得意的专家和愚蠢的主持人，为此我感到忧虑，作为伪文艺青年我应该感谢牛顿还是憎恨。</p>
 <p>两周里，表妹终于接到了中国美院的录取通知书，假如没有一些风波，这件事还并不能让我兴奋的提起，现在看来，人的挫败感和幸福感都交织于大起大落之中，就像小康之家永远是最庸俗的，夫妻相爱时最无趣的，“美存在于贵妇和娼妓身上”--萨特如是说。</p>
 <p>两周里，“胡斌”这个已经进了搜狗词库的名字的主人中的一个终于被杭州西湖区法院判刑，虽然结果被悲观的预料到了，但替身门事件又甚嚣尘上，杭州与胡斌的麻烦大概还需要持续一段时间，但作为今年最先出名的一宗恶劣交通事件，杭州和胡斌显然给后来的恶劣交通事件开了个“好”头，南京、成都迎头而上，今晚又听说重庆有一名女子撞死仨伤了俩，这样的速度如果不用去撞人，而是去赶英超美，我这个没驾照的也与有荣焉，可是事实是令人遗憾的，今天有人因为富家子在看电影路上死去，明天就有人因为富家女无证无牌在路上闲逛死。对于这件事，我已高度词穷。</p>
 <p>两周里，我无聊的像一块抹布，或者是一条拖把，我看书，我写字，我津津有味的看喜羊羊和灰太狼，看诸卫视放意淫连续剧《我的兄弟叫顺溜》，然后等着韵达慢递以70码/10的速度将我的行李和电脑从重庆寄到宁波（建议所有人类不要用韵达，在此我诅咒它），早上吃包子，中午和晚上喝啤酒和老妈做的菜，吃着传说中妈妈的煮的菜，但我还想着重庆的小炒，我是这样的心猿意马，老妈可别生气，因为我在重庆吃小炒的时候也想你的手艺，我是那样的心猿意马。至于为什么我像一块抹布或一条拖把而不是其他东西，我也不知道</p>
+</p>
 
-          </div>
-        </div>
+     <p class="md_block">
+    <div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" src="https://scm.pgx.me/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img class="wechat-img" src="https://scm.pgx.me/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+</p> 
+</div>
 
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://scm.pgx.me/post/yi-xie-sha-bi-shi-er-2/">
-              <h3 class="post-title">
-                下一篇：一些傻逼事儿（2）
-              </h3>
-            </a>
-          </div>
-          
-      </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">null</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://scm.pgx.me/atom.xml" target="_blank">RSS</a>
 </div>
 
 
+
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
+
+<div class="doc_comments">
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+      </div>
+
+
+
+
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+   <div class="footer">
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/><div class="site_footer_wrap"><div class="site_footer">
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+      <div class="mysocials"><div class="my_socials">
+		   
+			   
+    
+			   
+    
+			   
+    
+			   
+    
+</div><link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
 
+      </div>
+
+      <div class="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+      </div>
+
+</div></div>
+
+    </div>
+
+
+<style type="text/css">a.back_to_top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+}
+
+a.back_to_top span {
+    color: #888;
+}
+
+a.back_to_top:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+}
+
+a.back_to_top:hover span {
+    color: #555;
+}
+
+@media print, screen and (max-width: 580px) {
+    .back_to_top {
+        display: none !important;
+    }
+}
+
+
+
+</style><a id="back_to_top" href="#" class="back_to_top"><span>△</span>
+</a>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/jquery.js"></script>
+
+<script>$(document).ready((function(_this) {
+  return function() {
+    var bt;
+    bt = $('#back_to_top');
+    if ($(document).width() > 480) {
+      $(window).scroll(function() {
+        var st;
+        st = $(window).scrollTop();
+        if (st > 30) {
+          return bt.css('display', 'block');
+        } else {
+          return bt.css('display', 'none');
+        }
+      });
+      return bt.click(function() {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    }
+  };
+})(this));
 </script>
 
+</body>
 
-
-
-  </body>
 </html>

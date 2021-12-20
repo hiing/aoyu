@@ -1,92 +1,184 @@
 
-<!DOCTYPE html>
 <html>
-  <head>
-    
-<meta charset="utf-8" >
-
-<title>橘子 | 凹鱼的博客</title>
-<meta name="description" content="null">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://scm.pgx.me/favicon.ico?v=1639990227338">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://scm.pgx.me/styles/main.css">
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
+  <head lang="zh">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+        <meta content="yes" name="apple-mobile-web-app-capable"/>
+        <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <meta name="renderer" content="webkit">
+    <title>橘子 | 凹鱼的博客</title>
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/jquery.js"></script>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/basic.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
   </head>
+
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://scm.pgx.me">
-        <img class="avatar" src="https://scm.pgx.me/images/avatar.png?v=1639990227338" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://scm.pgx.me">
-        <h1 class="site-title">凹鱼的博客</h1>
-      </a>
+     <div class="header">
+      <div class="logo_title">
+		  
+        <div class="title animated fadeInDown"><img src="https://scm.pgx.me/images/avatar.png?v=1639990417836"/>
+
+          <h1 title="凹鱼的博客" class="weaklink"><a href="/">凹鱼的博客</a>
+
+          </h1>
+
+          <div class="navbar weaklink">
+            <div class="normal_nav">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+		
+      <ul class="mixed_site_nav site_nav sm sm-base">
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+ 
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+ 
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+
   </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
 </div>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
+            </div>
 
+            <div class="hamberger"><i class="fa fa-bars"></i>
+<i class="fa fa-times"></i>
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">橘子</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2010-11-04</span>
-            
+            </div>
+
           </div>
-          <div class="post-content">
-            <p>根叔结婚的日子是在十月六号，我给根叔做了伴郎。照乡俗，伴郎在六号那天要走到村子外头去把婚车接进来，于是我便和另一个伴郎以及根叔的妹妹从牧童岙沿着公路走了半个小时去迎接婚车。</p>
+
+        </div>
+
+      </div>
+
+      <div class="hidden_nav animated fadeInDown">
+
+<div class="bitcron_nav_container">
+
+
+  <div class="bitcron_nav">
+    <div class="mixed_site_nav_wrap site_nav_wrap">
+      <ul class="mixed_site_nav site_nav sm sm-base">
+		  
+	
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/" class="selected active current nav__item" >首页</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/archives" class="selected active current nav__item" >归档</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/tags" class="selected active current nav__item" >标签</a>
+
+  </li>
+
+
+  <li><a id="d2ef19af68cc211e98f8a0242ac110003" href="/post/about" class="selected active current nav__item" >关于</a>
+
+  </li>
+
+
+
+
+
+      </ul>
+
+      <div class="clear clear_nav_inline_end"></div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="clear clear_nav_end"></div>
+
+</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="main">
+      <div class="main-inner">
+
+
+<div class="content">
+
+
+
+
+
+
+  <div class="post_page" >
+
+<div class="post">
+  <div class="post_title sm_margin">
+    <h2><a>橘子</a>
+
+
+
+    </h2>
+  </div>
+
+  <div class="post_details">
+    <div class="info"><i class="fa fa-clock-o"></i>
+<span class="date_info">2010-11-04</span>
+<i class="fa fa-eye"></i>
+
+<span class="date_info"><span id="busuanzi_value_page_pv"></span> Views</span>
+
+
+<i class="fa fa-bookmark-o"></i>
+<span class="tags_info weaklink">
+	
+
+</span>
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="post_content markdown"><p class="md_block">
+    <span class="md_line md_line_start md_line_end"><p>根叔结婚的日子是在十月六号，我给根叔做了伴郎。照乡俗，伴郎在六号那天要走到村子外头去把婚车接进来，于是我便和另一个伴郎以及根叔的妹妹从牧童岙沿着公路走了半个小时去迎接婚车。</p>
 <p>那天天气很好，阳光明媚，和风照面，如果不看枯衰的野草，直以为这是早春的某一天，然而当然不是，提醒人的不只是野草还有路边已经红了的桔子林。</p>
 <p>象山多橘子，并一统称为黄岩橘，从小吃到大，并不觉得有些特别，后来本地培育出了个象山红的品种，皮薄肉厚，又小巧玲珑，那时可谓赚足了眼球，黄岩橘也受到了一些冲击，再加上农民不务农了，黄岩橘就结在树上，烂在地里，本地人看见了也不觉得有什么可惜的，与其烂在地里，倒不如让路人在口渴时随手摘几个橘子吃 ---那是不用客气的，如果恰逢桔园主人在场，你吃掉几个橘子竟会变成你的义务。然而换作从前，偷盗他人作物的是必须去请个戏班在村里给村民演上三天三夜 —这是我觉得最有意思的处罚。</p>
 <p>08年，我还在三中实习，跟的是沈丽华老师。沈老师聪颖有气质，对我颇为照顾，我至今感激。实习的日子过的很快，学东西也混日子，三中是我的母校，我那时却深居简出，有点近乡情更怯的意思，但是我确实很喜欢这个学校，如果让我说，我要说我最喜欢的是那些大树，可是此时却不想多说。</p>
@@ -109,58 +201,129 @@
 <p>他多么孤独。或许我也有这样的一天。</p>
 <p>08年到现在也有两年过去了，爷爷去世到今天还不到一年，今年清明节，我去给爷爷上坟，恰碰到妈妈姐姐上坟回来，于是便没有到坟上去看看，只是那片桔子林开着白色的---那是真正的花，等着爷爷回来，爷爷回不来了。</p>
 <p>橘子结在树上，烂在地里，就是现在。</p>
+</p>
 
-          </div>
-        </div>
+     <p class="md_block">
+    <div class="reward"><div class="reward-button">赏 <span class="reward-code"> <span class="alipay-code"> <img class="alipay-img" src="https://scm.pgx.me/media/images/alipay.png"><b>支付宝扫码打赏</b> </span> <span class="wechat-code"> <img class="wechat-img" src="https://scm.pgx.me/media/images/wechat.png"><b>微信打赏</b> </span> </span></div></div>
+</p> 
+</div>
 
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://scm.pgx.me/post/cong-mu-he-lan-da-dao-dao-dao-meng-kong-jian/">
-              <h3 class="post-title">
-                下一篇：从穆赫兰大道到盗梦空间
-              </h3>
-            </a>
-          </div>
-          
-      </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">null</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://scm.pgx.me/atom.xml" target="_blank">RSS</a>
 </div>
 
 
+
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
+
+<div class="doc_comments">
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+      </div>
+
+
+
+
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+   <div class="footer">
+<link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/><div class="site_footer_wrap"><div class="site_footer">
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+      <div class="mysocials"><div class="my_socials">
+		   
+			   
+    
+			   
+    
+			   
+    
+			   
+    
+</div><link href="https://scm.pgx.me/styles/main.css" type="text/css" rel="stylesheet"/>
 
+      </div>
+
+      <div class="copyright">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+      </div>
+
+</div></div>
+
+    </div>
+
+
+<style type="text/css">a.back_to_top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background: #f0f0f0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    transition-duration: .5s;
+    transition-propety: background-color;
+    display: none;
+}
+
+a.back_to_top span {
+    color: #888;
+}
+
+a.back_to_top:hover {
+    cursor: pointer;
+    background: #dfdfdf;
+}
+
+a.back_to_top:hover span {
+    color: #555;
+}
+
+@media print, screen and (max-width: 580px) {
+    .back_to_top {
+        display: none !important;
+    }
+}
+
+
+
+</style><a id="back_to_top" href="#" class="back_to_top"><span>△</span>
+</a>
+<script type="text/javascript" src="https://scm.pgx.me/media/scripts/jquery.js"></script>
+
+<script>$(document).ready((function(_this) {
+  return function() {
+    var bt;
+    bt = $('#back_to_top');
+    if ($(document).width() > 480) {
+      $(window).scroll(function() {
+        var st;
+        st = $(window).scrollTop();
+        if (st > 30) {
+          return bt.css('display', 'block');
+        } else {
+          return bt.css('display', 'none');
+        }
+      });
+      return bt.click(function() {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    }
+  };
+})(this));
 </script>
 
+</body>
 
-
-
-  </body>
 </html>
